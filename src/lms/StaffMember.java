@@ -11,8 +11,8 @@ public class StaffMember extends Member implements Borrowable {
 
     @Override
     public void borrowBook(Book book) {
-        if (this.borowedBooks.size() > 3) {
-            System.out.println("Maaf anda telah meminjam limit 3 buku, kembalikan buku untuk meminjam");
+        if (this.borowedBooks.size() > 10) {
+            System.out.println("Maaf anda telah meminjam limit 10 buku, kembalikan buku untuk meminjam");
             return;
         }
 
